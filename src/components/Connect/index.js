@@ -29,7 +29,7 @@ export default function Connect() {
       } else {
         setIsWalletInstalled(false);
       }
-    }, 1000);
+    }, 0);
 
     return () => {
       clearTimeout(timeout);
