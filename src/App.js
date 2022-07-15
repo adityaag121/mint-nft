@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useAuth } from "./Auth";
+import Connect from "./components/Connect";
+import NFTForm from "./components/NFTForm";
 
 function App() {
+  const { isAuthenticated } = useAuth();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App flex flex-col justify-center h-full">
+      {isAuthenticated ? <NFTForm /> : <Connect />}
     </div>
   );
 }

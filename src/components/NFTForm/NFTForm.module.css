@@ -1,0 +1,52 @@
+.uploader {
+	height: 230px;
+	width: 230px;
+	background-color: #eee;
+	color: black;
+	border: 5px dashed black;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	cursor: pointer;
+	font-weight: 600;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.uploaderIsDragging {
+	opacity: .5;
+	cursor: copy;
+}
+
+.imageDeleteBtn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+}
+
+.imageDeleteBtn:hover {
+	opacity: .7;
+}
+
+.container {
+	width: 50%;
+	height: 80vh;
+	min-width: 500px;
+	min-height: 300px;
+	max-height: 700px;
+	border-radius: 10px;
+	margin: 1rem auto;
+	padding: 10px 20px;
+	background-color: rgb(235, 235, 235);
+	box-shadow: 2px 2px 6px rgba(255,255,255,.2);
+}
+
+/* .progressBar {
+	height: 15px;
+	width: 100%;
+	border: 1px solid rgba(0, 255, 162);
+	border-radius: 20px;
+	box-shadow: 0 0 4px rgba(0, 255, 162, 0.282);
+} */
