@@ -212,7 +212,7 @@ export default function NFTForm() {
             cursor: isLoading ? "default" : "pointer",
           }}
         >
-          {isLoading ? progressPercent : "Create NFT"}
+          {isLoading ? progressPercent : "Submit"}
         </div>
       </div>
     </>
